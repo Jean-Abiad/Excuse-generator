@@ -26,5 +26,14 @@ window.onload = function() {
 
   }
   let excusa = theExcuse();
-  console.log(excusa);
+    console.log(excusa);
+  //h1
+  let textExcuse = document.getElementById("la-excusa");
+  textExcuse.innerText = excusa;
+  textExcuse.style.color = "purple";
+  //boton
+  let excuseBtn = document.querySelector("#boton");
+  excuseBtn.addEventListener("click", () => {
+    textExcuse.innerText = theExcuse();
+    textExcuse.style.color = "green";
 };
